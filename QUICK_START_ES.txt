@@ -1,0 +1,219 @@
+╔════════════════════════════════════════════════════════════════╗
+║        🐉 GUÍA RÁPIDA - DRAGON BALL LANDING PAGE 🐉          ║
+╚════════════════════════════════════════════════════════════════╝
+
+🚀 INSTALACIÓN Y EJECUCIÓN
+───────────────────────────────────────────────────────────────
+
+1. INSTALAR DEPENDENCIAS (ejecutar UNA SOLA VEZ):
+   
+   npm install
+
+   Esto instalará:
+   • Componentes de Radix UI
+   • Shadcn UI components
+   • Tailwind CSS 4
+   • React 19
+   • Otros paquetes necesarios
+
+2. INICIAR SERVIDOR DE DESARROLLO:
+
+   npm run dev
+
+   La app se abrirá en: http://localhost:5173
+
+3. COMPILAR PARA PRODUCCIÓN:
+
+   npm run build
+
+   Genera carpeta 'dist' optimizada
+
+4. VER PREVIEW DEL BUILD:
+
+   npm run preview
+
+
+📁 ESTRUCTURA DEL PROYECTO
+───────────────────────────────────────────────────────────────
+
+src/
+├── components/
+│   ├── HomePage.tsx              ← LANDING PAGE PRINCIPAL
+│   ├── HomePage.css              ← Estilos + Animaciones
+│   ├── CharacterDetailModal.tsx  ← Modal de personajes
+│   └── ui/                       ← 18 componentes Shadcn UI
+│
+├── lib/
+│   ├── characters.ts             ← Datos de personajes
+│   └── utils.ts                  ← Funciones útiles
+│
+├── App.tsx                       ← App principal
+├── main.tsx                      ← Entry point
+└── index.css                     ← Estilos globales
+
+
+✨ CARACTERÍSTICAS PRINCIPALES
+───────────────────────────────────────────────────────────────
+
+✓ HERO SECTION
+  - Título épico con gradiente
+  - Animaciones suaves
+  - Botones de acción
+
+✓ GUERREROS DESTACADOS
+  - 3 personajes principales
+  - Efecto glow animado
+  - Barra de poder
+  - Clic para detalles
+
+✓ EXPLORADOR
+  - Búsqueda en tiempo real
+  - Filtro por raza
+  - Ordenar por: nombre, poder, raza
+  - Grid responsivo
+
+✓ MODALES DE DETALLES
+  - Información completa del personaje
+  - Técnicas especiales
+  - Barra de poder visual
+  - Tooltips informativos
+
+
+🎨 18 COMPONENTES SHADCN UTILIZADOS
+───────────────────────────────────────────────────────────────
+
+Core UI:
+  • Button        • Card          • Badge         • Tabs
+
+Diálogos:
+  • Dialog        • Popover       • Hover Card    • Tooltip
+
+Entrada:
+  • Input         • Select        • Dropdown Menu • Toggle
+
+Datos:
+  • Table         • Pagination    • Progress
+  • Separator     • Carousel
+
+Feedback:
+  • Skeleton      • Alert
+
+
+🔍 BUSCAR Y FILTRAR
+───────────────────────────────────────────────────────────────
+
+BÚSQUEDA:
+  - Escribe el nombre del personaje
+  - Se filtra en tiempo real
+
+FILTROS:
+  - Todas las razas
+  - Saiyan
+  - Namekiano
+  - Humano
+  - Changelings
+
+ORDENAMIENTO:
+  - Por nombre (A-Z)
+  - Por poder (máximo primero)
+  - Por raza (alfabético)
+
+
+📊 PERSONAJES DISPONIBLES
+───────────────────────────────────────────────────────────────
+
+1. Goku          ⭐⭐⭐⭐⭐  Saiyan
+2. Vegeta        ⭐⭐⭐⭐⭐  Príncipe Saiyan
+3. Freezer       ⭐⭐⭐⭐⭐  Emperador
+4. Gohan         ⭐⭐⭐⭐   Saiyan Híbrido
+5. Piccolo       ⭐⭐⭐⭐   Namekiano
+6. Bulma         ⭐⭐     Científica
+7. Krilin        ⭐⭐⭐    Maestro de Artes Marciales
+
+
+🎯 PERSONALIZACIÓN
+───────────────────────────────────────────────────────────────
+
+AGREGAR PERSONAJES:
+  1. Abre: src/lib/characters.ts
+  2. Agrega un nuevo objeto en el array
+  3. Completa: id, name, role, image, bio, power, race, saga, techniques
+
+CAMBIAR COLORES:
+  - Edita: src/index.css
+  - Variables CSS:
+    --primary: Para botones y acentos
+    --secondary: Para secundarios
+    --destructive: Para alertas
+
+EDITAR ANIMACIONES:
+  - Archivo: src/components/HomePage.css
+  - Modifica keyframes y timing
+
+
+💡 TIPS Y TRUCOS
+───────────────────────────────────────────────────────────────
+
+• Haz clic en cualquier tarjeta de personaje para ver detalles
+• Pasa el mouse sobre los badges para ver tooltips
+• La búsqueda es instantánea
+• Todo es totalmente responsivo en móvil
+• Los estilos oscuros son tema por defecto
+• Las animaciones se optimizan en navegadores antiguos
+
+
+🐛 TROUBLESHOOTING
+───────────────────────────────────────────────────────────────
+
+Error: "cannot find module '@radix-ui'"
+  → Solución: npm install
+
+Error: "TypeScript compilation failed"
+  → Solución: npm run lint
+
+Error: "blank page"
+  → Solución: Limpia caché: npm run dev --reset-cache
+
+El servidor no inicia:
+  → Puerto 5173 ocupado: npm run dev -- --port 3000
+
+
+📚 ARCHIVOS IMPORTANTES
+───────────────────────────────────────────────────────────────
+
+LANDING PAGE:
+  src/components/HomePage.tsx      (16 KB)
+
+DATOS:
+  src/lib/characters.ts            (3 KB)
+
+ESTILOS:
+  src/components/HomePage.css      (2 KB)
+  src/index.css                    (Global)
+
+COMPONENTES UI:
+  src/components/ui/               (18 archivos)
+
+
+🚀 DEPLOYMENT
+───────────────────────────────────────────────────────────────
+
+Para desplegar a producción:
+
+1. npm run build
+2. Vercel:   vercel deploy dist
+3. Netlify:  drag drop carpeta dist
+4. GitHub Pages: npm run build && gh-pages -d dist
+
+
+📞 SOPORTE
+───────────────────────────────────────────────────────────────
+
+Documentación: Ver DRAGON_BALL_README.md
+Resumen: Ver COMPLETION_SUMMARY.txt
+Componentes: src/components/ui/
+
+
+═════════════════════════════════════════════════════════════════
+¡LISTO PARA DOMINAR EL MULTIVERSO! ⚡🐉
+═════════════════════════════════════════════════════════════════

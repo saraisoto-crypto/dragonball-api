@@ -1,11 +1,8 @@
+import HomePage from './components/HomePage'
 import './App.css'
 
 function App() {
-  return (
-    <div>
-      <h1>Dragon Ball</h1>
-    </div>
-  )
+  return <HomePage />
 }
 
 export default App
