@@ -32,33 +32,37 @@ Implementación de una aplicación web basada en la API de Dragon Ball, permitie
 
 ![Evidencia 1](evidencias/sarai-ev1.png)
 
-Descripción de la evidencia.
+Ejecución inicial del proyecto React con Vite, verificando que el entorno de desarrollo funciona correctamente en localhost:5173.
 
 ### Evidencia 2
 
 ![Evidencia 2](evidencias/sarai-ev2.png)
 
-Descripción de la evidencia.
+Primera versión de la página principal mostrando el título "Dragon Ball" como base estructural de la aplicación.
 
 ### Evidencia 3
 
 ![Evidencia 3](evidencias/sarai-ev3.png)
 
-Descripción de la evidencia.
+Avance del desarrollo con la integración de estilos iniciales y configuración de componentes en la interfaz.
 
 ### Evidencia 4
 
 ![Evidencia 4](evidencias/sarai-ev4.png)
 
-Descripción de la evidencia.
+Implementación del botón principal con estilos aplicados mediante Tailwind CSS y shadcn/ui.
 
 ### Evidencia 5
 
 ![Evidencia 5](evidencias/sarai-ev5.png)
 
-Descripción de la evidencia.
+Vista del hero de la landing page con el diseño final en tema oscuro, título animado "Dragon Ball Z" y botones de navegación.
 
----
+### Evidencia 6
+
+![Evidencia 6](evidencias/sarai-ev6.png)
+
+Sección "Leyendas Supremas" mostrando los 3 personajes más poderosos (Goku, Vegeta y Freezer) con cards interactivas consumidas desde la API de Dragon Ball.
 
 # Desarrollo de Angie Portocarrero
 
